@@ -36,8 +36,8 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public Optional<UserInfoDto> findByUsername(String username) {
-        return userRepository.findByUsername(username).map(userMapper::toDTO);
+    public Optional<UserInfoDto> findByUsername(String fullName) {
+        return userRepository.findByFullName(fullName).map(userMapper::toDTO);
     }
 
     @Override
@@ -46,13 +46,18 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
+    public Optional<UserInfoDto> findByCarLicensePlate(String licensePlate) {
+        return userRepository.findByCarLicensePlate(licensePlate).map(userMapper::toDTO);
+    }
+
+    @Override
     public boolean existsById(Long id) {
         return userRepository.existsById(id);
     }
 
     @Override
-    public boolean existsByUsername(String username) {
-        return userRepository.existsByUsername(username);
+    public boolean existsByUsername(String fullName) {
+        return userRepository.existsByFullName(fullName);
     }
 
     @Override
