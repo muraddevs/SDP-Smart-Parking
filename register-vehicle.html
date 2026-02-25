@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Register Vehicle | AI Parking</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<header class="header">
+  <div class="container header__inner">
+    <a class="brand" href="index.html#home">
+      <img class="brand__logo" src="assets/images/logo.png" alt="Logo" />
+      <div class="brand__text">
+        <div class="brand__name">AI Park</div>
+        <div class="brand__sub">smart parking solutions</div>
+      </div>
+    </a>
+
+    <nav class="nav">
+       <a href="index.html#home">Home</a>
+        <a href="index.html#aboutUs">About Us</a>
+        <a href="register.html">Register</a>
+        <a href="register-vehicle.html">Register Vehicle</a>
+        <a href="profile.html">Profile</a>
+       <a href="admin.html">Admin</a>
+     </nav>
+  </div>
+</header>
+
+<section class="section section--light">
+  <div class="container">
+    <h2 class="section__title dark reveal">Register your Vehicle</h2>
+
+    <div class="vehicle-card reveal">
+      <form class="vehicle-form" onsubmit="return false;">
+        <label class="full">
+          <span>Plate Number</span>
+          <input type="text" />
+        </label>
+
+        <div class="vehicle-row">
+          <label><span>Brand</span><input type="text" /></label>
+          <label><span>Color</span><input type="text" /></label>
+        </div>
+
+        <button class="link-btn" type="button">+ Add another vehicle</button>
+        <button class="btn btn--pill btn--dark" type="button">Register</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<script src="js/main.js"></script>
+</body>
+</html>

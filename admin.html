@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin | AI Parking</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<header class="header">
+  <div class="container header__inner">
+    <a class="brand" href="index.html#home">
+      <img class="brand__logo" src="assets/images/logo.png" alt="Logo" />
+      <div class="brand__text">
+        <div class="brand__name">AI Park</div>
+        <div class="brand__sub">smart parking solutions</div>
+      </div>
+    </a>
+
+    <nav class="nav">
+       <a href="index.html#home">Home</a>
+        <a href="index.html#aboutUs">About Us</a>
+        <a href="register.html">Register</a>
+        <a href="register-vehicle.html">Register Vehicle</a>
+        <a href="profile.html">Profile</a>
+       <a href="admin.html">Admin</a>
+     </nav>
+  </div>
+</header>
+
+    <a class="btn btn--pill login-btn" href="profile.html">Login</a>
+  </div>
+</header>
+
+<section class="section section--blue">
+  <div class="container">
+    <h2 class="section__title reveal">Admin Panel</h2>
+
+    <div class="admin-card reveal">
+      <div class="admin-top">
+        <div>
+          <div class="admin-title">Entries / Exits</div>
+          <div class="admin-sub">Only for project creators (admins).</div>
+        </div>
+        <button class="btn btn--dark btn--pill" id="btnLoadLogs">Load from DB</button>
+      </div>
+
+      <div class="table-wrap">
+        <table class="table" id="logsTable">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Plate</th>
+              <th>Action</th>
+              <th>Gate</th>
+              <th>Time</th>
+            </tr>
+          </thead>
+          <tbody id="logsBody">
+            <!-- rows inserted by JS -->
+          </tbody>
+        </table>
+      </div>
+
+      <div class="admin-hint">
+        Later: we will connect to your backend API (Spring/Node) and show real records.
+      </div>
+    </div>
+  </div>
+</section>
