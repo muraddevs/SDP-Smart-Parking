@@ -5,13 +5,8 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-<<<<<<< Updated upstream:backend/pom.xml
-		<version>3.5.6</version>
-		<relativePath/>
-=======
+<!-- <&#45;&#45;sfjghsfjsfj&ndash;&gt;-->
 		<version>4.0.3</version>
-		<relativePath/> <!-- lookup parent from repository -->
->>>>>>> Stashed changes:backendAPI/aiparkingsystem/parking/pom.xml
 	</parent>
 	<groupId>SDP</groupId>
 	<artifactId>Smart-Parking</artifactId>
